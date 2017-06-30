@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_news_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    tools:context="com.example.yls.newsdemo.Activity.NewsContentActivity">
+
+    <com.tencent.smtt.sdk.WebView
+        android:id="@+id/News_web"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <EditText
+            android:id="@+id/edt_comment"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:singleLine="true"
+            android:hint="请输入你要发表的言论"
+            android:layout_marginLeft="15dp"
+            android:layout_height="fill_parent" />
+
+        <Button
+            android:id="@+id/btn_Sendcomment"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="5dp"
+            android:text="评论"/>
+
+        <Button
+            android:id="@+id/btn_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="2dp"
+            android:textSize="25dp"
+            android:text="∧"/>
+
+        <Button
+            android:id="@+id/btn_Collection"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="2dp"
+            android:textSize="25dp"
+            android:textColor="#eee"
+            android:text="★"/>
+
+    </LinearLayout>
+</LinearLayout>

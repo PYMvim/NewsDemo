@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <ListView
+    android:id="@+id/News_lv"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:background="#fff"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_news"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="#ac1"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:text="新闻"/>
+
+        <Button
+            android:id="@+id/btn_find"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="#f32"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:text="发现"/>
+
+        <Button
+            android:id="@+id/btn_MyCollection"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="#d2d"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:text="我的收藏"/>
+
+    </LinearLayout>
+</LinearLayout>
